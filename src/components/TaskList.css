@@ -1,0 +1,68 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: all 0.3s ease-in-out;
+}
+
+th:first-child,
+td:first-child {
+  width: 10%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 20%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 50%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  width: 10%;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+td:hover {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+.clear-button {
+  background-color: #fff;
+  color: #d32f2f;
+  border: 2px solid #d32f2f;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clear-button:hover {
+  background-color: #d32f2f;
+  color: #fff;
+}
